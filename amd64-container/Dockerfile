@@ -11,8 +11,9 @@ ARG USER_GID=$USER_UID
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
-    && chmod 0440 /etc/sudoers.d/$USERNAME && chown -R $USERNAME:$USERNAME /opt/debs \
-    && [ -f  /etc/schroot/chroot.d/buildroot ] && chown -R $USERNAME:$USERNAME /var/chroot/buildroot  && sed -ri "s/(users=.*)/\1,$USERNAME/g" /etc/schroot/chroot.d/buildroot || true
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+RUN chown -R $USERNAME:$USERNAME /opt/debs
+RUN [ -f  /etc/schroot/chroot.d/buildroot ] && sed -ri "s/(users=.*)/\1,$USERNAME/g" /etc/schroot/chroot.d/buildroot || true
 
 # ********************************************************
 # * Anything else you want to do like clean up goes here *

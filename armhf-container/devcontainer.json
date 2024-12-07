@@ -30,7 +30,7 @@
 	,
 	"containerEnv": {
 		"CMAKE_TOOLCHAIN_FILE": "/usr/share/cmake/toolchain.cmake",
-		"CMAKE_GENERATOR": "Ninja"
+		"CMAKE_GENERATOR": "Unix Makefiles"
 	},
 	"customizations": {
 		"vscode": {

@@ -29,7 +29,7 @@
 	// Configure tool-specific properties.
 	,
 	"containerEnv": {
-		"CMAKE_GENERATOR": "Ninja"
+		"CMAKE_GENERATOR": "Unix Makefiles"
 	},
 	"customizations": {
 		"vscode": {
