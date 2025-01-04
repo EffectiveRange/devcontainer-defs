@@ -55,6 +55,20 @@
 				"GitHub.vscode-pull-request-github",
 				"EffectiveRangeLLC.erdev"
 			],
+			"settings": {
+				"C_Cpp.intelliSenseEngine": "disabled",
+				"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+				"clangd.arguments": [
+					"--query-driver=/usr/bin/arm*g*",
+					"--background-index",
+					"--completion-style=detailed",
+					"--header-insertion=iwyu",
+					"-j=4",
+					"--pch-storage=memory",
+					"--malloc-trim",
+					"--log=error"
+				],
+			}
 		}
 	},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
