@@ -1,13 +1,14 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
-	"name": "Node.js & TypeScript",
+	"name": "Angular",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
 			"USERNAME": "${env:USER}",
 			// NOTE: if user GID != UID we'll get issues
 			// TODO: figure out a way to get the user's GID
+			//TODO 1000 is reserved for node user when installind the system
 			"USER_UID": "1001",
 			"GITHUB_ACTION": "${env:GITHUB_ACTION}",
 		},
@@ -29,8 +30,6 @@
 	// Configure tool-specific properties.
 	,
 	"containerEnv": {
-		"CMAKE_TOOLCHAIN_FILE": "/usr/share/cmake/toolchain.cmake",
-		"CMAKE_GENERATOR": "Unix Makefiles"
 	},
 	"customizations": {
 		"vscode": {
