@@ -52,7 +52,8 @@
 				"GitHub.copilot",
 				"github.vscode-github-actions",
 				"GitHub.vscode-pull-request-github",
-				"EffectiveRangeLLC.erdev"
+				"EffectiveRangeLLC.erdev",
+				"ryanluker.vscode-coverage-gutters"
 			],
 			"settings": {
 				"C_Cpp.intelliSenseEngine": "disabled",
