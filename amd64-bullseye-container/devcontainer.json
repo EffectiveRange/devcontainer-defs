@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
-	"name": "ARM64-Cross",
+	"name": "AMD64-Bullseye",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
@@ -29,7 +29,6 @@
 	// Configure tool-specific properties.
 	,
 	"containerEnv": {
-		"CMAKE_TOOLCHAIN_FILE": "/usr/share/cmake/toolchain.cmake",
 		"CMAKE_GENERATOR": "Unix Makefiles"
 	},
 	"customizations": {
@@ -53,13 +52,13 @@
 				"GitHub.copilot",
 				"github.vscode-github-actions",
 				"GitHub.vscode-pull-request-github",
-				"EffectiveRangeLLC.erdev"
+				"EffectiveRangeLLC.erdev",
+				"ryanluker.vscode-coverage-gutters"
 			],
 			"settings": {
 				"C_Cpp.intelliSenseEngine": "disabled",
 				"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
 				"clangd.arguments": [
-					"--query-driver=/usr/bin/arm*g*",
 					"--background-index",
 					"--completion-style=detailed",
 					"--header-insertion=iwyu",

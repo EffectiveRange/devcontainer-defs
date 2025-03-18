@@ -1,4 +1,4 @@
-FROM effectiverange/er-devc-arm64:latest
+FROM effectiverange/er-devc-amd64-bullseye:latest
 
 ARG USERNAME=$USER
 ARG USER_UID=1000
