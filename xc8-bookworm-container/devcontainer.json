@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
-	"name": "AMD64-Bookworm",
+	"name": "XC8-Bookworm",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
