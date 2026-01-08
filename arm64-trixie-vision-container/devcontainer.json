@@ -17,6 +17,10 @@
 		"--net=host"
 	],
 	"remoteUser": "${env:USER}",
+	"remoteEnv": {
+		"LANG": "C.UTF-8",
+		"LC_ALL": "C.UTF-8"
+	},
 	"mounts": [
 		"type=bind,source=${env:HOME},target=${env:HOME}"
 	]
